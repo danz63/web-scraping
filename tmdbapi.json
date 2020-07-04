@@ -1,0 +1,6 @@
+{
+	"rest-server":"https://api.themoviedb.org/3/movie",
+	"api-key" : "fd344df0178710e2c6c354b89ea46b5f",
+	"example-request" : "https://api.themoviedb.org/3/movie/550?api_key=fd344df0178710e2c6c354b89ea46b5f",
+	"api-read-access-token" : "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZDM0NGRmMDE3ODcxMGUyYzZjMzU0Yjg5ZWE0NmI1ZiIsInN1YiI6IjVlMWU4MTc0NWMwNzFiMDAxMTYzMGVlMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zGzSt-oq6b6SYbA4gCg4fNpkxTV7wwFc85Uy6Ivotjg"
+}

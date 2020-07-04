@@ -1,0 +1,5 @@
+{
+	"rest-server" : "http://omdbapi.com",
+	"api_key" : ["a7ec2b75","46235603","68f6dc0c","8fe50d4a"],
+	"example-request" : "http://www.omdbapi.com/?apikey=a7ec2b75&s=harry%20potter"
+}
