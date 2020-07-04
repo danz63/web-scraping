@@ -26,3 +26,6 @@ untuk meng enable mod_rewrite ketikan perintah pada terminal
 
 Lalu restart apache2
 `sudo systemctl restart apache2`
+
+
+Note : variable koneksi berada di file `/app/core/Controller.php` pada method `__construct()`
