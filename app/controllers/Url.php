@@ -98,6 +98,10 @@ class Url extends Controller
         unset($script);
         extract($_POST);
         unset($_POST);
+        $extension = explode(".",$name);
+        $extension = end($extension);
+
+        // $error diekstrak dari $_FILES
         if ($error != 0) {
             echo '
             <script>
@@ -106,14 +110,16 @@ class Url extends Controller
             </script>';
             die;
         }
-        if ($type != 'application/x-javascript') {
+
+        // $error diekstrak dari $_FILES
+        if ($extension != 'js') {
             echo '
             <script>
                 alert("File yang di upload bukan berkas javascript");
-                window.history.back();
             </script>';
             die;
         }
+        // $size diekstrak dari $_FILES
         if ($size > 10000) {
             echo '
             <script>
@@ -122,7 +128,11 @@ class Url extends Controller
             </script>';
             die;
         }
+
+        // $$id_url diekstrak dari $_POST
         $upload_location = 'upload/' . $id_url . '.js';
+
+        // $tmp_name diekstrak dari $_FILES
         $status_upload = move_uploaded_file($tmp_name, $upload_location);
         if ($status_upload != 1) {
             echo '
