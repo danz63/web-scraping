@@ -94,10 +94,13 @@ class Url extends Controller
     public function insert()
     {
         $script = $_FILES['file'];
+        
         extract($script);
         unset($script);
         extract($_POST);
         unset($_POST);
+        
+        // $extension diekstrak dari $_FILES
         $extension = explode(".",$name);
         $extension = end($extension);
 
@@ -129,7 +132,7 @@ class Url extends Controller
             die;
         }
 
-        // $$id_url diekstrak dari $_POST
+        // $id_url diekstrak dari $_POST
         $upload_location = 'upload/' . $id_url . '.js';
 
         // $tmp_name diekstrak dari $_FILES
